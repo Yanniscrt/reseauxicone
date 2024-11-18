@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images côte à côte</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black; /* Fond noir */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Pour centrer verticalement la page */
+            overflow: hidden; /* Empêche les barres de défilement */
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;  /* Centre les images entre elles */
+            align-items: center;      /* Aligne verticalement les images */
+            margin: 0; /* Supprime les marges autour */
+        }
+
+        .image-container a {
+            display: block; /* Assure qu'il n'y ait pas d'espace autour des images */
+        }
+
+        .image-container a img {
+            display: block;  /* Supprime l'espace en bas de l'image */
+            width: 50px; /* Réduit la taille des images à 50px */
+            height: auto;
+            margin: 0; /* Aucune marge autour de l'image */
+            padding: 0; /* Aucune marge intérieure */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <!-- Image 1 -->
+        <a href="https://www.instagram.com/oddsidebaby?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="image1.png" alt="Instagram">
+        </a>
+        <!-- Image 2 -->
+        <a href="https://www.youtube.com/@oddsidebaby" target="_blank">
+            <img src="image2.png" alt="YouTube">
+        </a>
+    </div>
+</body>
+</html>
